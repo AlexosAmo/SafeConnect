@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">SafeConnect</string>
+    <string name="title_login">Log In</string>
+    <string name="title_register">Create Account</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_email">Email address</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+
+    <string name="btn_login">Log In</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_reset">Send reset link</string>
+    <string name="btn_no_account">Don\'t have an account? Register</string>
+    <string name="btn_have_account">Already have an account? Log In</string>
+
+    <string name="sos_confirm_title">Activate SOS?</string>
+    <string name="sos_confirm_message">SafeConnect will save an emergency incident with your current location.</string>
+    <string name="btn_activate">Activate</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>isiZulu</item>
+        <item>Afrikaans</item>
+        <item>Sesotho</item>
+    </string-array>
+
+    <string-array name="incident_categories">
+        <item>Suspicious activity</item>
+        <item>Theft</item>
+        <item>Road incident</item>
+        <item>Harassment</item>
+        <item>Medical emergency</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="title_community">Community Feed</string>
+    <string name="btn_post_report">Post Report</string>
+
+    <string-array name="report_categories">
+        <item>Suspicious activity</item>
+        <item>Theft</item>
+        <item>Road incident</item>
+        <item>Harassment</item>
+        <item>Medical emergency</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Splash Screen -->
+    <string name="select_language">Select your language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_zulu">isiZulu</string>
+    <string name="lang_afrikaans">Afrikaans</string>
+    <string name="lang_sesotho">Sesotho</string>
+    <string name="btn_continue">Continue</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_back">Welcome back</string>
+    <string name="welcome_user_format">Welcome, %1$s</string>
+    <string name="btn_google">Google</string>
+    <string name="btn_facebook">Facebook</string>
+    <string name="sos_contacts_notified">SOS activated. %1$d emergency contacts are being notified.</string>
+    <string name="sign_in_continue">Sign in to continue</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_continue_with">or continue with</string>
+    <string name="google_facebook">Google     •     Facebook</string>
+    <string name="app_tagline">Your community safety companion</string>
+
+    <!-- Register Screen -->
+    <string name="create_account_title">Create your SafeConnect account</string>
+    <string name="create_account_subtitle">Add your details so your safety profile is ready when you need it.</string>
+    <string name="agree_terms">I agree to the Terms &amp; Privacy Policy</string>
+
+    <!-- Forgot Password Screen -->
+    <string name="reset_password_title">Reset your password</string>
+    <string name="reset_password_subtitle">Enter your email and Firebase will send a secure password reset link.</string>
+    <string name="back_to_login">Back to Log In</string>
+
+    <!-- Settings Screen -->
+    <string name="profile_security">Profile &amp; security</string>
+    <string name="settings_info">Firebase Authentication protects your account. Profile and preferences are stored in Cloud Firestore.</string>
+    <string name="label_language">Language</string>
+    <string name="label_notifications">Notifications</string>
+    <string name="btn_save_settings">Save Settings</string>
+    <string name="btn_logout">Log Out</string>
+    <string name="settings_saved">Settings saved</string>
+
+    <!-- Report Incident Screen -->
+    <string name="report_incident_title">Report an Incident</string>
+    <string name="report_incident_subtitle">Share what happened so it can be recorded in your SafeConnect account.</string>
+    <string name="label_category">Category</string>
+    <string name="hint_describe_incident">Describe the incident</string>
+    <string name="location_info">Your current location can be attached when location permission is granted.</string>
+    <string name="btn_submit_report">Submit Report</string>
+    <string name="report_submitted">Report submitted: %1$s</string>
+
+    <!-- Track Journey Screen -->
+    <string name="track_journey_title">Track Journey</string>
+    <string name="track_journey_subtitle">Use this mode when travelling and keep your safety status visible.</string>
+    <string name="location_preview">LIVE LOCATION PREVIEW\n\n             •\n\n     Current position</string>
+    <string name="journey_not_started">Journey not started</string>
+    <string name="btn_start_journey">Start Journey</string>
+    <string name="journey_active_status">Journey tracking is active. Keep this screen open while travelling.</string>
+    <string name="journey_active_btn">Journey Active</string>
+
+    <!-- Emergency Contacts Screen -->
+    <string name="emergency_contacts_title">Emergency Contacts</string>
+    <string name="emergency_contacts_subtitle">People you may need to call during an emergency.</string>
+    <string name="btn_add_contact">+ Add emergency contact</string>
+    <string name="empty_contacts">No emergency contacts added yet.</string>
+    <string name="dialog_add_contact_title">Add emergency contact</string>
+    <string name="btn_add">Add</string>
+    <string name="error_name_phone_required">Name and phone are required</string>
+    <string name="relationship_default">Emergency contact</string>
+    <string name="hint_contact_name">Name</string>
+    <string name="hint_contact_phone">Phone number</string>
+    <string name="hint_relationship">Relationship</string>
+    <string name="label_description">Description</string>
+    <string name="hint_describe_concern">Describe the safety concern…</string>
+
+    <!-- Community Screen -->
+    <string name="community_title">Community</string>
+    <string name="community_subtitle">Safety information and community updates</string>
+    <string name="safety_tip_title">Safety Tip</string>
+    <string name="safety_tip_content">Stay aware of your surroundings and keep an emergency contact up to date.</string>
+    <string name="community_update_title">Community Update</string>
+    <string name="community_update_content">This feed can be connected to a Firestore `communityPosts` collection for live local updates.</string>
+    <string name="report_responsibly">Report responsibly. Avoid posting personal information about other people.</string>
+
+    <!-- Alerts Screen -->
+    <string name="my_alerts_title">My Alerts</string>
+    <string name="my_alerts_subtitle">Your saved SOS and incident history from Firestore.</string>
+    <string name="loading">Loading…</string>
+    <string name="no_incidents">No incidents yet. Your future safety activity will appear here.</string>
+
+    <!-- Home Screen -->
+    <string name="good_to_see_you">Good to see you</string>
+    <string name="safety_score_label">Your Safety Score</string>
+    <string name="safety_update_info">Keep your profile and emergency contacts up to date.</string>
+    <string name="need_help">Need help?</string>
+    <string name="sos_button_info">Press to activate an emergency incident</string>
+    <string name="quick_actions">Quick actions</string>
+
+    <string name="btn_track">Track Journey</string>
+    <string name="btn_report">Report Incident</string>
+    <string name="btn_contacts">Emergency Contacts</string>
+    <string name="btn_alerts">My Alerts</string>
+
+    <!-- SOS Active Screen -->
+    <string name="emergency_activated">EMERGENCY ACTIVATED</string>
+    <string name="sos_saved_info">Your SOS has been saved to Firebase.</string>
+    <string name="sos_details">● Alert saved\n● Location attached\n● Incident status: Active</string>
+    <string name="responder_info">Responder tracking can be connected through Firebase Cloud Functions/FCM when you are ready.</string>
+    <string name="btn_cancel_sos">Cancel SOS</string>
+
+    <string name="btn_back_text">← Back</string>
+    <string name="community_feed_title">Community Feed</string>
+    <string name="btn_post_safety_report">Post Safety Report</string>
+    <string name="no_reports_found">No nearby safety reports found.</string>
+
+    <string name="report_posted">Report posted</string>
+
+    <!-- General / Errors -->
+    <string name="back">Back</string>
+    <string name="greeting_default">Hi, there</string>
+    <string name="greeting_format">Welcome, %1$s</string>
+    <string name="error_valid_email_password" translatable="false">Enter a valid email and password</string>
+    <string name="error_full_name_required" translatable="false">Full name is required</string>
+    <string name="error_valid_email" translatable="false">Enter a valid email address</string>
+    <string name="error_valid_phone" translatable="false">Enter a valid phone number</string>
+    <string name="error_strong_password" translatable="false">Password must be at least 8 characters and include a number</string>
+    <string name="error_passwords_mismatch" translatable="false">Passwords do not match</string>
+    <string name="error_accept_terms" translatable="false">Please accept the Terms &amp; Privacy Policy</string>
+    <string name="password_reset_sent" translatable="false">Password reset email sent. Check your inbox.</string>
+    <string name="error_no_account">No account was found for this email.</string>
+    <string name="error_invalid_credentials">Email or password is incorrect.</string>
+    <string name="error_network">No internet connection. Please try again.</string>
+    <string name="error_unknown">Something went wrong. Please try again.</string>
+    <string name="error_could_not_send_alert" translatable="false">Could not send alert (%1$d)</string>
+    <string name="error_could_not_save_settings" translatable="false">Could not save settings (%1$d)</string>
+
+    <string name="label_email">Email</string>
+    <string name="label_phone">Phone</string>
+</resources>

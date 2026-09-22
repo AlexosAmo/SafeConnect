@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/safeconnect_red"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:id="@+id/tvSelectLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_language"
+        android:textSize="18sp"
+        android:textColor="@color/text_ink"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/radioEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lang_english"
+            android:checked="true"
+            android:textColor="@color/text_ink" />
+
+        <RadioButton
+            android:id="@+id/radioZulu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lang_zulu"
+            android:textColor="@color/text_ink" />
+
+        <RadioButton
+            android:id="@+id/radioAfrikaans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lang_afrikaans"
+            android:textColor="@color/text_ink" />
+
+        <RadioButton
+            android:id="@+id/radioSesotho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lang_sesotho"
+            android:textColor="@color/text_ink" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_continue"
+        android:backgroundTint="@color/safeconnect_red"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+</LinearLayout>

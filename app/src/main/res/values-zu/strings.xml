@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">SafeConnect</string>
+    <string name="title_login">Ngena</string>
+    <string name="title_register">Vula i-akhawunti</string>
+    <string name="title_settings">Izilungiselelo</string>
+    <string name="hint_full_name">Igama eliphelele</string>
+    <string name="hint_email">Ikheli le-imeyili</string>
+    <string name="hint_phone">Inombolo yocingo</string>
+    <string name="hint_password">Iphasiwedi</string>
+    <string name="hint_confirm_password">Qinisekisa iphasiwedi</string>
+    <string name="btn_login">Ngena</string>
+    <string name="btn_register">Bhalisa</string>
+    <string name="btn_reset">Thumela isixhumanisi</string>
+    <string name="btn_no_account">Awunayo i-akhawunti? Bhalisa</string>
+    <string name="btn_have_account">Usuvele unayo i-akhawunti? Ngena</string>
+    <string name="sos_confirm_title">Qalisa i-SOS?</string>
+    <string name="sos_confirm_message">I-SafeConnect izogcina isigameko esiphuthumayo nendawo yakho yamanje.</string>
+    <string name="btn_activate">Qalisa</string>
+    <string name="btn_cancel">Khansela</string>
+    <string-array name="languages">
+        <item>IsiNgisi</item>
+        <item>isiZulu</item>
+        <item>isiBhunu</item>
+        <item>isiSotho</item>
+    </string-array>
+    <string-array name="incident_categories">
+        <item>Umsebenzi osolisayo</item>
+        <item>Ukwebiwa</item>
+        <item>Isigameko somgwaqo</item>
+        <item>Ukuhlukunyezwa</item>
+        <item>Isimo esiphuthumayo sezempilo</item>
+        <item>Okunye</item>
+    </string-array>
+    <string name="title_community">Umphakathi Feed</string>
+    <string name="btn_post_report">Thumela Umbiko</string>
+    <string-array name="report_categories">
+        <item>Umsebenzi osolisayo</item>
+        <item>Ukwebiwa</item>
+        <item>Isigameko somgwaqo</item>
+        <item>Ukuhlukunyezwa</item>
+        <item>Isimo esiphuthumayo sezempilo</item>
+        <item>Okunye</item>
+    </string-array>
+    <string name="select_language">Khetha ulimi lwakho</string>
+    <string name="lang_english">IsiNgisi</string>
+    <string name="lang_zulu">isiZulu</string>
+    <string name="lang_afrikaans">isiBhunu</string>
+    <string name="lang_sesotho">isiSotho</string>
+    <string name="btn_continue">Qhubeka</string>
+    <string name="welcome_back">Wamukelekile futhi</string>
+    <string name="sign_in_continue">Ngena ukuze uqhubeke</string>
+    <string name="forgot_password">Ukhohlwe iphasiwedi?</string>
+    <string name="or_continue_with">noma qhubeka nge</string>
+    <string name="google_facebook">Google • Facebook</string>
+    <string name="app_tagline">Umngane wakho wezokuphepha womphakathi</string>
+    <string name="create_account_title">Vula i-akhawunti yakho ye-SafeConnect</string>
+    <string name="create_account_subtitle">Faka imininingwane yakho ukuze iphrofayili yakho yezokuphepha ilunge lapho uyidinga.</string>
+    <string name="agree_terms">Ngiyavumelana Nemigomo Nenqubomgomo Yobumfihlo</string>
+    <string name="reset_password_title">Setha kabusha iphasiwedi yakho</string>
+    <string name="reset_password_subtitle">Faka i-imeyili yakho futhi i-Firebase izothumela isixhumanisi sokusetha kabusha iphasiwedi esiphephile.</string>
+    <string name="back_to_login">Buyela ekungeneni</string>
+    <string name="profile_security">Iphrofayili nokuphepha</string>
+    <string name="settings_info">I-Firebase Authentication ivikela i-akhawunti yakho. Iphrofayili nezintandokazi zigcinwa ku-Cloud Firestore.</string>
+    <string name="label_language">Ulimi</string>
+    <string name="label_notifications">Izaziso</string>
+    <string name="btn_save_settings">Londoloza Izilungiselelo</string>
+    <string name="btn_logout">Phuma</string>
+    <string name="settings_saved">Izilungiselelo zilondoloziwe</string>
+    <string name="report_incident_title">Bika Isigameko</string>
+    <string name="report_incident_subtitle">Yabelana ngokwenzekile ukuze kuqoshwe ku-akhawunti yakho ye-SafeConnect.</string>
+    <string name="label_category">Isigaba</string>
+    <string name="hint_describe_incident">Chaza isigameko</string>
+    <string name="location_info">Indawo yakho yamanje inganamathiselwa uma imvume yendawo inikeziwe.</string>
+    <string name="btn_submit_report">Thumela Umbiko</string>
+    <string name="report_submitted">Umbiko uthunyelwe: %1$s</string>
+    <string name="track_journey_title">Landela Uhambo</string>
+    <string name="track_journey_subtitle">Sebenzisa le modi lapho uhamba futhi ugcine isimo sakho sokuphepha sibonakala.</string>
+    <string name="location_preview">UKUBUKEZWA KWENDAWO OKUBALULEKILE\n\n             •\n\n     Indawo yamanje</string>
+    <string name="journey_not_started">Uhambo alukaqalwa</string>
+    <string name="btn_start_journey">Qala Uhambo</string>
+    <string name="journey_active_status">Ukulandelela uhambo kusebenza. Gcina lesi sikrini sivuliwe ngenkathi uhamba.</string>
+    <string name="journey_active_btn">Uhambo Luyasebenza</string>
+    <string name="emergency_contacts_title">Oxhumana Nabo Abaphuthumayo</string>
+    <string name="emergency_contacts_subtitle">Abantu okungenzeka udinge ukubafonela ngesikhathi esiphuthumayo.</string>
+    <string name="btn_add_contact">+ Faka othintana naye ophuthumayo</string>
+    <string name="empty_contacts">Akukabikho oxhumana nabo abaphuthumayo abangeziwe.</string>
+    <string name="dialog_add_contact_title">Faka othintana naye ophuthumayo</string>
+    <string name="btn_add">Faka</string>
+    <string name="error_name_phone_required">Igama nocingo kuyadingeka</string>
+    <string name="relationship_default">Othintana naye ophuthumayo</string>
+    <string name="hint_contact_name">Igama</string>
+    <string name="hint_contact_phone">Inombolo yocingo</string>
+    <string name="hint_relationship">Ubuhlobo</string>
+    <string name="label_description">Incazelo</string>
+    <string name="hint_describe_concern">Chaza ukukhathazeka ngokuphepha…</string>
+    <string name="community_title">Umphakathi</string>
+    <string name="community_subtitle">Ulwazi lwezokuphepha nezibuyekezo zomphakathi</string>
+    <string name="safety_tip_title">Ithiphu Yezokuphepha</string>
+    <string name="safety_tip_content">Hlala uqaphela indawo okuyo futhi ugcine othintana naye ophuthumayo enolwazi lwakamuva.</string>
+    <string name="community_update_title">Isibuyekezo Somphakathi</string>
+    <string name="community_update_content">Luphawu lungaxhunywa eqoqweni le-Firestore le-`communityPosts` ngezibuyekezo zasendaweni ezibukhoma.</string>
+    <string name="report_responsibly">Bika ngokuzibophezela. Gwema ukuthumela imininingwane yomuntu siqu yabanye abantu.</string>
+    <string name="my_alerts_title">Izaziso Zami</string>
+    <string name="my_alerts_subtitle">Umlando wakho we-SOS nezigameko ogciniwe ovela ku-Firestore.</string>
+    <string name="loading">Kuyalayisha…</string>
+    <string name="no_incidents">Azikabikho izigameko okwamanje. Umsebenzi wakho wokuphepha wesikhathi esizayo uzovela lapha.</string>
+    <!-- Home Screen -->
+    <string name="good_to_see_you">Kuhle ukukubona</string>
+    <string name="safety_score_label">Amaphuzu Akho Ezokuphepha</string>
+    <string name="safety_update_info">Gcina iphrofayili yakho noxhumana nabo abaphuthumayo benolwazi lwakamuva.</string>
+    <string name="need_help">Udinga usizo?</string>
+    <string name="sos_button_info">Cindezela ukuze uqalise isigameko esiphuthumayo</string>
+    <string name="quick_actions">Izenzo ezisheshayo</string>
+
+    <string name="btn_track">Landela Uhambo</string>
+    <string name="btn_report">Bika Isigameko</string>
+    <string name="btn_contacts">Oxhumana nabo</string>
+    <string name="btn_alerts">Izaziso Zami</string>
+
+    <!-- SOS Active Screen -->
+    <string name="emergency_activated">ISIMO ESIPHUTHUMAYO SIQALISIWE</string>
+    <string name="sos_saved_info">I-SOS yakho igcinwe ku-Firebase.</string>
+    <string name="sos_details">● Isixwayiso sigciniwe\n● Indawo inamathiselwe\n● Isimo sesigameko: Kiyasebenza</string>
+    <string name="responder_info">Ukulandelela abasizi kungaxhunywa nge-Firebase Cloud Functions/FCM lapho usulungile.</string>
+    <string name="btn_cancel_sos">Khansela i-SOS</string>
+
+    <string name="btn_back_text">← Emuva</string>
+    <string name="community_feed_title">Umphakathi Feed</string>
+    <string name="btn_post_safety_report">Thumela Umbiko Wezokuphepha</string>
+    <string name="no_reports_found">Akukho mibiko yezokuphepha eseduze etholakele.</string>
+
+    <string name="report_posted">Umbiko uthunyelwe</string>
+
+    <string name="back">Buyela emuva</string>
+    <string name="greeting_default">Sawubona</string>
+    <string name="greeting_format">Welcome, %1$s</string>
+    <string name="error_no_account">Ayikho i-akhawunti etholakele yale i-imeyili.</string>
+    <string name="error_invalid_credentials">I-imeyili noma iphasiwedi ayilungile.</string>
+    <string name="error_network">Akunalo uxhumano lwe-inthanethi. Sicela uzame futhi.</string>
+    <string name="error_unknown">Kukhona okungahambanga kahle. Sicela uzame futhi.</string>
+    <string name="welcome_user_format">Welcome, %1$s</string>
+    <string name="btn_google">Google</string>
+    <string name="btn_facebook">Facebook</string>
+    <string name="sos_contacts_notified">SOS activated. %1$d emergency contacts are being notified.</string>
+    <string name="label_email">I-imeyili</string>
+    <string name="label_phone">Ucingo</string>
+</resources>

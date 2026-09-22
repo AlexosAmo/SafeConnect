@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/panel_grey"
+    android:orientation="vertical"
+    android:padding="22dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/track_journey_title"
+            android:textColor="@color/text_ink"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/track_journey_subtitle"
+        android:textColor="@color/text_muted" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bg_soft_blue"
+        android:gravity="center"
+        android:text="@string/location_preview"
+        android:textColor="@color/safeconnect_blue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvJourneyStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/journey_not_started"
+        android:textColor="@color/text_muted" />
+
+    <Button
+        android:id="@+id/btnStartJourney"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/safeconnect_blue"
+        android:text="@string/btn_start_journey"
+        android:textColor="@color/white" />
+</LinearLayout>

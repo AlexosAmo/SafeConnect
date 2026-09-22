@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">SafeConnect</string>
+    <string name="title_login">Teken in</string>
+    <string name="title_register">Skep rekening</string>
+    <string name="title_settings">Instellings</string>
+    <string name="hint_full_name">Volle naam</string>
+    <string name="hint_email">E-posadres</string>
+    <string name="hint_phone">Telefoonnommer</string>
+    <string name="hint_password">Wagwoord</string>
+    <string name="hint_confirm_password">Bevestig wagwoord</string>
+    <string name="btn_login">Teken in</string>
+    <string name="btn_register">Registreer</string>
+    <string name="btn_reset">Stuur herstelskakel</string>
+    <string name="btn_no_account">Het nie \'n rekening nie? Registreer</string>
+    <string name="btn_have_account">Reeds \'n rekening? Teken in</string>
+    <string name="sos_confirm_title">Aktiveer SOS?</string>
+    <string name="sos_confirm_message">SafeConnect sal \'n noodvoorval stoor met jou huidige ligging.</string>
+    <string name="btn_activate">Aktiveer</string>
+    <string name="btn_cancel">Kanselleer</string>
+    <string-array name="languages">
+        <item>Engels</item>
+        <item>isiZulu</item>
+        <item>Afrikaans</item>
+        <item>Sesotho</item>
+    </string-array>
+    <string-array name="incident_categories">
+        <item>Verdagte aktiwiteit</item>
+        <item>Diefstal</item>
+        <item>Padvoorval</item>
+        <item>Teistering</item>
+        <item>Mediese noodgeval</item>
+        <item>Ander</item>
+    </string-array>
+    <string name="title_community">Gemeenskapstroom</string>
+    <string name="btn_post_report">Plaas verslag</string>
+    <string-array name="report_categories">
+        <item>Verdagte aktiwiteit</item>
+        <item>Diefstal</item>
+        <item>Padvoorval</item>
+        <item>Teistering</item>
+        <item>Mediese noodgeval</item>
+        <item>Ander</item>
+    </string-array>
+    <string name="select_language">Kies jou taal</string>
+    <string name="lang_english">Engels</string>
+    <string name="lang_zulu">isiZulu</string>
+    <string name="lang_afrikaans">Afrikaans</string>
+    <string name="lang_sesotho">Sesotho</string>
+    <string name="btn_continue">Gaan voort</string>
+    <string name="welcome_back">Welkom terug</string>
+    <string name="sign_in_continue">Teken in om voort te gaan</string>
+    <string name="forgot_password">Wagwoord vergeet?</string>
+    <string name="or_continue_with">of gaan voort met</string>
+    <string name="google_facebook">Google • Facebook</string>
+    <string name="app_tagline">Jou gemeenskapsveiligheidsgenoot</string>
+    <string name="create_account_title">Skep jou SafeConnect-rekening</string>
+    <string name="create_account_subtitle">Voeg jou besonderhede by sodat jou veiligheidsprofiel gereed is wanneer jy dit nodig het.</string>
+    <string name="agree_terms">Ek stem in tot die Bepalings en Privaatheidsbeleid</string>
+    <string name="reset_password_title">Stel jou wagwoord terug</string>
+    <string name="reset_password_subtitle">Voer jou e-pos in en Firebase sal \'n veilige wagwoordherstelskakel stuur.</string>
+    <string name="back_to_login">Terug na aanmelding</string>
+    <string name="profile_security">Profiel en sekuriteit</string>
+    <string name="settings_info">Firebase-verifikasie beskerm jou rekening. Profiel en voorkeure word in Cloud Firestore gestoor.</string>
+    <string name="label_language">Taal</string>
+    <string name="label_notifications">Kennisgewings</string>
+    <string name="btn_save_settings">Stoor instellings</string>
+    <string name="btn_logout">Teken uit</string>
+    <string name="settings_saved">Instellings gestoor</string>
+    <string name="report_incident_title">Rapporteer \'n voorval</string>
+    <string name="report_incident_subtitle">Deel wat gebeur het sodat dit in jou SafeConnect-rekening aangeteken kan word.</string>
+    <string name="label_category">Kategorie</string>
+    <string name="hint_describe_incident">Beskryf die voorval</string>
+    <string name="location_info">Jou huidige ligging kan aangeheg word wanneer liggingtoestemming verleen word.</string>
+    <string name="btn_submit_report">Dien verslag in</string>
+    <string name="report_submitted">Verslag ingedien: %1$s</string>
+    <string name="track_journey_title">Volg reis</string>
+    <string name="track_journey_subtitle">Gebruik hierdie modus wanneer jy reis en hou jou veiligheidstatus sigbaar.</string>
+    <string name="location_preview">LIVE LIGGING VOORSKOU\n\n             •\n\n     Huidige posisie</string>
+    <string name="journey_not_started">Reis nie begin nie</string>
+    <string name="btn_start_journey">Begin reis</string>
+    <string name="journey_active_status">Reisopsporing is aktief. Hou hierdie skerm oop terwyl jy reis.</string>
+    <string name="journey_active_btn">Reis aktief</string>
+    <string name="emergency_contacts_title">Noodkontakte</string>
+    <string name="emergency_contacts_subtitle">Mense wat jy dalk tydens \'n noodgeval moet bel.</string>
+    <string name="btn_add_contact">+ Voeg noodkontak by</string>
+    <string name="empty_contacts">Geen noodkontakte nog bygevoeg nie.</string>
+    <string name="dialog_add_contact_title">Voeg noodkontak by</string>
+    <string name="btn_add">Voeg by</string>
+    <string name="error_name_phone_required">Naam en telefoon word vereis</string>
+    <string name="relationship_default">Noodkontak</string>
+    <string name="hint_contact_name">Naam</string>
+    <string name="hint_contact_phone">Telefoonnommer</string>
+    <string name="hint_relationship">Verwantskap</string>
+    <string name="label_description">Beskrywing</string>
+    <string name="hint_describe_concern">Beskryf die veiligheidskwelvrae…</string>
+    <string name="community_title">Gemeenskap</string>
+    <string name="community_subtitle">Veiligheidsinligting en gemeenskapsopdaterings</string>
+    <string name="safety_tip_title">Veiligheidswenk</string>
+    <string name="safety_tip_content">Bly bewus van jou omgewing en hou \'n noodkontak op datum.</string>
+    <string name="community_update_title">Gemeenskapsopdatering</string>
+    <string name="community_update_content">Hierdie stroom kan gekoppel word aan \'n Firestore `communityPosts` versameling vir lewendige plaaslike opdaterings.</string>
+    <string name="report_responsibly">Rapporteer verantwoordelik. Vermy om persoonlike inligting oor ander mense te plaas.</string>
+    <string name="my_alerts_title">My waarskuwings</string>
+    <string name="my_alerts_subtitle">Jou gestoorde SOS- en voorvalgeskiedenis vanaf Firestore.</string>
+    <string name="loading">Laai tans…</string>
+    <string name="no_incidents">Nog geen voorvalle nie. Jou toekomstige veiligheidsaktiwiteit sal hier verskyn.</string>
+    <!-- Home Screen -->
+    <string name="good_to_see_you">Goed om jou te sien</string>
+    <string name="safety_score_label">Jou veiligheidstelling</string>
+    <string name="safety_update_info">Hou jou profiel en noodkontakte op datum.</string>
+    <string name="need_help">Benodig hulp?</string>
+    <string name="sos_button_info">Druk om \'n noodvoorval te aktiveer</string>
+    <string name="quick_actions">Vinnige aksies</string>
+
+    <string name="btn_track">Volg reis</string>
+    <string name="btn_report">Rapporteer voorval</string>
+    <string name="btn_contacts">Noodkontakte</string>
+    <string name="btn_alerts">My waarskuwings</string>
+
+    <!-- SOS Active Screen -->
+    <string name="emergency_activated">NOOD GEAKTIVEER</string>
+    <string name="sos_saved_info">Jou SOS is op Firebase gestoor.</string>
+    <string name="sos_details">● Waarskuwing gestoor\n● Ligging aangeheg\n● Voorvalstatus: Aktief</string>
+    <string name="responder_info">Responder-opsporing kan via Firebase Cloud Functions/FCM gekoppel word wanneer jy gereed is.</string>
+    <string name="btn_cancel_sos">Kanselleer SOS</string>
+
+    <string name="btn_back_text">← Terug</string>
+    <string name="community_feed_title">Gemeenskapstroom</string>
+    <string name="btn_post_safety_report">Plaas veiligheidsverslag</string>
+    <string name="no_reports_found">Geen nabygeleë veiligheidsverslae gevind nie.</string>
+
+    <string name="report_posted">Verslag geplaas</string>
+
+    <string name="back">Terug</string>
+    <string name="greeting_default">Goeie dag</string>
+    <string name="greeting_format">Welkom, %1$s</string>
+    <string name="error_no_account">Geen rekening is vir hierdie e-pos gevind nie.</string>
+    <string name="error_invalid_credentials">E-pos of wagwoord is verkeerd.</string>
+    <string name="error_network">Geen internetverbinding nie. Probeer asseblief weer.</string>
+    <string name="error_unknown">Iets het fout gegaan. Probeer asseblief weer.</string>
+    <string name="welcome_user_format">Welkom, %1$s</string>
+    <string name="btn_google">Google</string>
+    <string name="btn_facebook">Facebook</string>
+    <string name="sos_contacts_notified">SOS geaktiveer. %1$d noodkontakte word in kennis gestel.</string>
+    <string name="label_email">E-pos</string>
+    <string name="label_phone">Foon</string>
+</resources>

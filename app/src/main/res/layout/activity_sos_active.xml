@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/panel_grey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="22dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/emergency_activated"
+        android:textColor="@color/safeconnect_red"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sos_saved_info"
+        android:textColor="@color/text_muted" />
+
+    <TextView
+        android:id="@+id/tvIncidentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Incident status: Active"
+        android:textColor="@color/text_ink"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvResponder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Responder: Awaiting assignment"
+        android:textColor="@color/text_muted" />
+
+    <TextView
+        android:id="@+id/tvTracking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Waiting for responder updates..."
+        android:textColor="@color/text_muted" />
+
+    <Button
+        android:id="@+id/btnCancelSos"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/btn_cancel_sos"
+        android:textColor="@color/safeconnect_red" />
+
+</LinearLayout>
