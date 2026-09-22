@@ -1,0 +1,5 @@
+- [x] Update `FirebaseRepository.register` signature
+- [x] Update `RegisterActivity` to pass current locale to registration
+- [x] Make `ivProfileIcon` clickable in `HomeActivity`
+- [x] Refine locale application in `HomeActivity`
+- [x] Final verification

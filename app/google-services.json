@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "993144619690",
+    "project_id": "safeconnectapp-51b0e",
+    "storage_bucket": "safeconnectapp-51b0e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993144619690:android:e0a0e099ea2ff1821746d3",
+        "android_client_info": {
+          "package_name": "com.amogelang.safeconnect.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDUtjv8CLF0k25A1Fc80vzSHY9Suevs_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

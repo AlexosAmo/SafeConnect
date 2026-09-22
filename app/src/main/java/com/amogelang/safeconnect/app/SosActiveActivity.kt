@@ -1,0 +1,1 @@
+package com.amogelang.safeconnect.app// Completely defined in MainActivity.kt

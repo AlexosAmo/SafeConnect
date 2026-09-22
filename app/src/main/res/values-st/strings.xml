@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">SafeConnect</string>
+    <string name="title_login">Kena</string>
+    <string name="title_register">Etsa akhaonto</string>
+    <string name="title_settings">Dipeakanyo</string>
+    <string name="hint_full_name">Lebitso ka botlalo</string>
+    <string name="hint_email">Aterese ya imeyili</string>
+    <string name="hint_phone">Nomoro ya mohala</string>
+    <string name="hint_password">Phasewete</string>
+    <string name="hint_confirm_password">Netefatsa phasewete</string>
+    <string name="btn_login">Kena</string>
+    <string name="btn_register">Ngodisa</string>
+    <string name="btn_reset">Romela sehokelo</string>
+    <string name="btn_no_account">Ha o na akhaonto? Ngodisa</string>
+    <string name="btn_have_account">O se o na le akhaonto? Kena</string>
+    <string name="sos_confirm_title">Kgetha SOS?</string>
+    <string name="sos_confirm_message">SafeConnect e tla boloka ketsahalo ya tshohanyetso ka sebaka sa hao sa hona jwale.</string>
+    <string name="btn_activate">Kgetha</string>
+    <string name="btn_cancel">Kansela</string>
+    <string-array name="languages">
+        <item>Senyesemane</item>
+        <item>isiZulu</item>
+        <item>Seafrikanse</item>
+        <item>Sesotho</item>
+    </string-array>
+    <string-array name="incident_categories">
+        <item>Diketso tse belaeang</item>
+        <item>Bohodu</item>
+        <item>Ketsahalo ya tsela</item>
+        <item>Tlhaphiso</item>
+        <item>Tshohanyetso ya bongaka</item>
+        <item>Tse ding</item>
+    </string-array>
+    <string name="title_community">Phephetso ya Setjhaba</string>
+    <string name="btn_post_report">Romela Tlaleho</string>
+    <string-array name="report_categories">
+        <item>Diketso tse belaeang</item>
+        <item>Bohodu</item>
+        <item>Ketsahalo ya tsela</item>
+        <item>Tlhaphiso</item>
+        <item>Tshohanyetso ya bongaka</item>
+        <item>Tse ding</item>
+    </string-array>
+    <string name="select_language">Khetha puo ya hao</string>
+    <string name="lang_english">Senyesemane</string>
+    <string name="lang_zulu">isiZulu</string>
+    <string name="lang_afrikaans">Seafrikanse</string>
+    <string name="lang_sesotho">Sesotho</string>
+    <string name="btn_continue">Tswela pele</string>
+    <string name="welcome_back">O amogetswe hape</string>
+    <string name="sign_in_continue">Kena ho tswela pele</string>
+    <string name="forgot_password">O lebetse phasewete?</string>
+    <string name="or_continue_with">kapa tswela pele ka</string>
+    <string name="google_facebook">Google • Facebook</string>
+    <string name="app_tagline">Molekane wa hao wa tshireletso ya setjhaba</string>
+    <string name="create_account_title">Etsa akhaonto ya hao ya SafeConnect</string>
+    <string name="create_account_subtitle">Kenya dintlha tsa hao hore profaele ya hao ya tshireletso e be e lokile ha o e hloka.</string>
+    <string name="agree_terms">Ke dumellana le Dipehelo le Pholisi ya Lekunutu</string>
+    <string name="reset_password_title">Seta phasewete ya hao hape</string>
+    <string name="reset_password_subtitle">Kenya imeyili ya hao mme Firebase e tla romela sehokelo se bolokehileng sa ho seta phasewete hape.</string>
+    <string name="back_to_login">Boela ho Kena</string>
+    <string name="profile_security">Profaele le tshireletso</string>
+    <string name="settings_info">Firebase Authentication e sireletsa akhaonto ya hao. Profaele le dikgetho di bolokwa ho Cloud Firestore.</string>
+    <string name="label_language">Puo</string>
+    <string name="label_notifications">Ditsebiso</string>
+    <string name="btn_save_settings">Boloka Dipeakanyo</string>
+    <string name="btn_logout">Tswile</string>
+    <string name="settings_saved">Dipeakanyo di bolokilwe</string>
+    <string name="report_incident_title">Tlaleha Ketsahalo</string>
+    <string name="report_incident_subtitle">Abelana ka se etsahetseng hore se tle se rekotwe akhaontong ya hao ya SafeConnect.</string>
+    <string name="label_category">Sehlopha</string>
+    <string name="hint_describe_incident">Hlalosa ketsahalo</string>
+    <string name="location_info">Sebaka sa hao sa hona jwale se ka kentshwa ha tumello ya sebaka e fanwe.</string>
+    <string name="btn_submit_report">Romela Tlaleho</string>
+    <string name="report_submitted">Tlaleho e rometswe: %1$s</string>
+    <string name="track_journey_title">Latela Leeto</string>
+    <string name="track_journey_subtitle">Sebelisa mokgwa ona ha o tsamaya mme o boloke boemo ba hao ba tshireletso bo bonahala.</string>
+    <string name="location_preview">PONELO-PELE YA SEBAKA YA HONA JWALALE\n\n             •\n\n     Sebaka sa hona jwale</string>
+    <string name="journey_not_started">Leeto ha le a qala</string>
+    <string name="btn_start_journey">Qala Leeto</string>
+    <string name="journey_active_status">Ho latela leeto ho sebetsa. Boloka skrine sena se butswe ha o ntse o tsamaya.</string>
+    <string name="journey_active_btn">Leeto le Sebetsa</string>
+    <string name="emergency_contacts_title">Dikgokahanyo tsa Tshohanyetso</string>
+    <string name="emergency_contacts_subtitle">Batho bao o ka nna wa hloka ho ba letsetsa nakong ya tshohanyetso.</string>
+    <string name="btn_add_contact">+ Kenya kgokahanyo ya tshohanyetso</string>
+    <string name="empty_contacts">Ha ho na dikgokahanyo tsa tshohanyetso tse kentsweng hajoale.</string>
+    <string name="dialog_add_contact_title">Kenya kgokahanyo ya tshohanyetso</string>
+    <string name="btn_add">Kenya</string>
+    <string name="error_name_phone_required">Lebitso le mohala di a hlokahala</string>
+    <string name="relationship_default">Kgokahanyo ya tshohanyetso</string>
+    <string name="hint_contact_name">Lebitso</string>
+    <string name="hint_contact_phone">Nomoro ya mohala</string>
+    <string name="hint_relationship">Kamano</string>
+    <string name="label_description">Tlhaloso</string>
+    <string name="hint_describe_concern">Hlalosa ho tšoenyeha ka tšireletso…</string>
+    <string name="community_title">Setjhaba</string>
+    <string name="community_subtitle">Tlhahisoleseding ya tshireletso le dintjhafalo tsa setjhaba</string>
+    <string name="safety_tip_title">Keletso ya Tshireletso</string>
+    <string name="safety_tip_content">Lula o fadimehile ka tikoloho ya hao mme o boloke kgokahanyo ya tshohanyetso e le ntjha.</string>
+    <string name="community_update_title">Ntshafalo ya Setjhaba</string>
+    <string name="community_update_content">Phephetso ena e ka hokelwa ho kgoboketso ya Firestore ya `communityPosts` bakeng sa dintjhafalo tsa sebaka seo.</string>
+    <string name="report_responsibly">Tlaleha ka boikarabelo. Qoba ho kenya dintlha tsa motho ka mong tsa batho ba bang.</string>
+    <string name="my_alerts_title">Ditsebiso tsa ka</string>
+    <string name="my_alerts_subtitle">Nalane ya hao ya SOS le diketsahalo e bolokilweng ho tswa ho Firestore.</string>
+    <string name="loading">E a laela…</string>
+    <string name="no_incidents">Ha ho na diketsahalo hajoale. Mesebetsi ya hao ya tshireletso ya kamoso e tla hlaha mona.</string>
+    <!-- Home Screen -->
+    <string name="good_to_see_you">Ho monate ho o bona</string>
+    <string name="safety_score_label">Lintlha tsa hao tsa tshireletso</string>
+    <string name="safety_update_info">Boloka profaele ya hao le dikgokahanyo tsa tshohanyetso di le ntjha.</string>
+    <string name="need_help">Na o hloka thuso?</string>
+    <string name="sos_button_info">Tobetsa ho kgetha ketsahalo ya tshohanyetso</string>
+    <string name="quick_actions">Diketso tse potlakileng</string>
+
+    <string name="btn_track">Latela Leeto</string>
+    <string name="btn_report">Tlaleha Ketsahalo</string>
+    <string name="btn_contacts">Dikgokahanyo</string>
+    <string name="btn_alerts">Ditsebiso tsa ka</string>
+
+    <!-- SOS Active Screen -->
+    <string name="emergency_activated">TSHOHANYETSO E KGETHILWE</string>
+    <string name="sos_saved_info">SOS ya hao e bolokilwe ho Firebase.</string>
+    <string name="sos_details">● Temoso e bolokilwe\n● Sebaka se kentswe\n● Boemo ba ketsahalo: E sebetsa</string>
+    <string name="responder_info">Ho latela bafaneli ho ka hokelwa ka Firebase Cloud Functions/FCM ha o se o lokile.</string>
+    <string name="btn_cancel_sos">Kansela SOS</string>
+
+    <string name="btn_back_text">← Morao</string>
+    <string name="community_feed_title">Phephetso ya Setjhaba</string>
+    <string name="btn_post_safety_report">Romela Tlaleho ya Tshireletso</string>
+    <string name="no_reports_found">Ha ho na ditlaleho tsa tshireletso tse haufi tse fumanweng.</string>
+
+    <string name="report_posted">Tlaleho e rometswe</string>
+
+    <string name="back">Morao</string>
+    <string name="greeting_default">Dumela</string>
+    <string name="greeting_format">Welcome, %1$s</string>
+    <string name="error_no_account">Ha ho na akhaonto e fumanweng bakeng sa imeyili ena.</string>
+    <string name="error_invalid_credentials">Imeyili kapa phasewete ha e a nepahala.</string>
+    <string name="error_network">Ha ho na kgokahanyo ya inthanete. Ka kopo leka hape.</string>
+    <string name="error_unknown">Ho na le ho sa tsamayang hantle. Ka kopo leka hape.</string>
+    <string name="welcome_user_format">Welcome, %1$s</string>
+    <string name="btn_google">Google</string>
+    <string name="btn_facebook">Facebook</string>
+    <string name="sos_contacts_notified">SOS activated. %1$d emergency contacts are being notified.</string>
+    <string name="label_email">I-imeile</string>
+    <string name="label_phone">Fono</string>
+</resources>
