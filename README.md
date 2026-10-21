@@ -19,6 +19,13 @@ and share safety information with the community.
 - Profile and settings management
 - Google and Facebook login interface
 - Offline Firestore support
+- The REST API architecture.
+- Backend prerequisites and startup instructions.
+- Base URL configuration for emulator and physical device testing.
+- The endpoints used by the application.
+- How to execute unit and instrumentation tests.
+- Test results from your actual run.
+- Which features use REST and which still use Firebase.
 
 ## Technologies Used
 
