@@ -13,3 +13,11 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Local secrets and generated artifacts
+**/service-account*.json
+**/*-firebase-adminsdk-*.json
+backend/build/
+backend/.gradle/
+*.jks
+*.keystore

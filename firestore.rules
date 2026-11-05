@@ -1,0 +1,119 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    // A user may read and maintain only their own profile.
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId)
+                    && request.resource.data.userId == userId;
+      allow update: if isOwner(userId)
+                    && request.resource.data.userId == resource.data.userId
+                    && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+                      'fullName', 'email', 'phoneNumber', 'preferredLanguage',
+                      'notificationsEnabled', 'profilePhotoUrl', 'province',
+                      'safeConnectId', 'fcmToken', 'updatedAt'
+                    ])
+                    && (!('safeConnectId' in resource.data)
+                        || request.resource.data.safeConnectId == resource.data.safeConnectId);
+      allow delete: if false;
+
+      match /emergencyContacts/{contactId} {
+        allow read, create, update, delete: if isOwner(userId);
+      }
+      match /safetyAssessments/{assessmentId} {
+        allow read: if isOwner(userId);
+        allow create: if isOwner(userId)
+          && request.resource.data.userId == userId
+          && request.resource.data.score is int
+          && request.resource.data.score >= 0
+          && request.resource.data.score <= 100
+          && request.resource.data.answers is list
+          && request.resource.data.answers.size() == 8;
+        allow update, delete: if false;
+      }
+    }
+
+    // Incidents are private by default; an SOS backend may explicitly share an incident with linked contact UIDs.
+    // Firebase Admin SDK calls from Spring Boot / Cloud Functions bypass rules.
+    match /incidents/{incidentId} {
+      allow create: if signedIn()
+                    && request.resource.data.userId == request.auth.uid;
+      allow read: if signedIn()
+                  && (resource.data.userId == request.auth.uid
+                      || request.auth.uid in resource.data.sharedWith);
+      allow update: if signedIn()
+                    && resource.data.userId == request.auth.uid
+                    && request.resource.data.userId == request.auth.uid
+                    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status]);
+      allow delete: if false;
+      match /smsDelivery/{deliveryId} {
+        allow read, create, update: if signedIn()
+          && get(/databases/$(database)/documents/incidents/$(incidentId)).data.userId == request.auth.uid;
+        allow delete: if false;
+      }
+    }
+
+    // Coarse province-level community posts are visible to signed-in members.
+    // Client-created posts contain no reporter UID or precise GPS coordinates.
+    match /communityReports/{reportId} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+                    && request.resource.data.province is string
+                    && request.resource.data.province.size() <= 40
+                    && request.resource.data.category is string
+                    && request.resource.data.category.size() <= 40
+                    && request.resource.data.description is string
+                    && request.resource.data.description.size() <= 280
+                    && !('latitude' in request.resource.data)
+                    && !('longitude' in request.resource.data);
+      // Public posts are immutable from clients; moderation happens server-side.
+      allow update, delete: if false;
+    }
+
+
+    // A journey owner controls the document. Only account UIDs explicitly
+    // listed by that owner in sharedWith may read its live location/status.
+    match /journeys/{journeyId} {
+      allow create: if signedIn() && request.resource.data.userId == request.auth.uid;
+      allow read: if signedIn() &&
+        (resource.data.userId == request.auth.uid || request.auth.uid in resource.data.sharedWith);
+      allow update: if signedIn() && resource.data.userId == request.auth.uid
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'status', 'sharingEnabled', 'sharedWith', 'latestLatitude',
+          'latestLongitude', 'locationAccuracyMeters', 'locationUpdatedAt',
+          'endedAt', 'journeyEndedAt'
+        ]);
+      allow delete: if false;
+    }
+
+    // Default deny for every collection not explicitly listed above.
+    match /safetyScores/{userId} {
+      allow read: if isOwner(userId);
+      allow write: if false; // Spring Boot Admin SDK only; client cannot award points.
+    }
+    match /safetyScoreEvents/{eventId} {
+      allow read: if signedIn() && eventId.matches(request.auth.uid + ".*");
+      allow write: if false;
+    }
+    match /safetyChallengeCompletions/{completionId} {
+      allow read: if signedIn() && resource.data.userId == request.auth.uid;
+      allow write: if false;
+    }
+    match /awarenessCompletions/{completionId} {
+      allow read: if signedIn() && resource.data.userId == request.auth.uid;
+      allow write: if false;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
