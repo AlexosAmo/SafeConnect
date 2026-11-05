@@ -2,7 +2,7 @@
 
 SafeConnect is an Android-first community safety app for South Africa, built in Kotlin. It lets people report incidents to their community, share live journeys with trusted contacts, trigger an SOS, and check their own safety readiness, and it keeps working when the network does not.
 
-> **Demo video:** [Watch the full feature walkthrough ](https://youtu.be/WNtqsjEI264)
+> **Demo video:** https://youtu.be/WNtqsjEI264
 > **Latest release / signed APK:** [v2.0.0 on GitHub Releases](https://github.com/AlexosAmo/SafeConnect/releases)
 > **Release notes:**
 # Release Notes
